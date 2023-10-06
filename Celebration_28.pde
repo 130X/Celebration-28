@@ -8,7 +8,7 @@ int brightnessNumber=128; //Range:1-255
 //
 void setup() {
   //fullScreen(); //displayWidth, displayHeight
-  size( 800, 600 ); //Landscape
+  size( 500, 200 ); //Landscape
   // Copy Display Orientation
   appWidth = width;
   appHeight = height;
@@ -27,10 +27,12 @@ void setup() {
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
   backgroundImageHeight = appHeight-1;
+  //Concatentation of Pathways
   String up = "..";
   String open = "/"; 
   String imagesPath = up + open + up + open + up + open
-  picBackground = loadImage( imagespath + "imagesUsed/Landscape & Square Images/cactus-gr7.png");
+  String landScapeImage = "imagesUsed/Landscape & Square Images/";
+  picBackground = loadImage( imagespath + "cactus gr7.png"
   //
   //DIVs
   //rect( backgroundimageX, backgroundimageY, backgroundImageWidth, backgroundImageHeight );
