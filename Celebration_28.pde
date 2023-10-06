@@ -31,8 +31,8 @@ void setup() {
   String up = "..";
   String open = "/"; 
   String imagesPath = up + open + up + open + up + open;
-  String landScapeImage = "Images used/Landscape & square Images/"; 
-  picBackground = loadImage( imagesPath + landScapeImage + "cactus gr7.png");
+  String landScapeImage = "Images used"; 
+  picBackground = loadImage( landScapeImage + open + "cactus gr7.png");
   //
   //DIVs
   //rect( backgroundimageX, backgroundimageY, backgroundImageWidth, backgroundImageHeight );
@@ -64,7 +64,7 @@ void draw() {
     noTint(); //See Processing DOC
     //println(nightmode);
   }
-  image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
+ image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
 } //End draw
 //
 void keyPressed() {
