@@ -2,9 +2,9 @@
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage picBackground;
-Boolean nightmode=false; //Note: clock and turn on automatically
-Boolean brightnessControl=false; //Note: ARROWS
-int brightnessNumber=128; //Range:1-255
+Boolean nightmode=false;      //Note: clock and turn on automatically
+Boolean brightnessControl=false;      //Note: ARROWS
+int brightnessNumber=128;       //Range:1-255
 //
 void setup() {
   //fullScreen(); //displayWidth, displayHeight
@@ -41,7 +41,7 @@ void setup() {
 //
 void draw() {
   //background(255); //built in BUG, 1 pixel
-  rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
+  //rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   //
   //println(brightnessControl, nightmode);
   if ( brightnessControl==true )
@@ -58,13 +58,15 @@ void draw() {
   }
   //if ( nightmode==true ) tint ( 64, 64, 40 ); //Gray Scale: 1/2 tint (i.e 128/256=1/2)
   if ( nightmode==true ) {
-    tint ( 64, 64, 40 );
+    tint ( 64, 64, 40 ); //blue light must be limited, i.e Less than <40
     //println(nightmode);
   } else {
     noTint(); //See Processing DOC
     //println(nightmode);
   }
  image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
+ image( orangeForeground ); //orange image, purpose see circles in aspect ratio 
+ image(); // acer nitro 50 in portrait , geomety is landscape, thus centered
 } //End draw
 //
 void keyPressed() {
@@ -79,6 +81,7 @@ void keyPressed() {
   //NOTE: Nightmode does turn off
   if ( key==CODED && keyCode==UP || keyCode==DOWN ) { //Brightness keybind
     brightnessControl = true;
+    //Bultin BUG, use boolean 
     if (key==CODED && keyCode==UP) brightnessNumber++ ; //brightnessNumber+=1  //brightnessNumber = brightnessNumber+1
     if (key==CODED && keyCode==DOWN) brightnessNumber-- ; //brightnessNumber-=1 //brightnessNumber = brightnessNumber-1
     //CONTINUE HERE with brightness toggles
