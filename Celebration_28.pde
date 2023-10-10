@@ -1,8 +1,8 @@
 //Global Variables
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
-PImage picBackground;
-Boolean nightmode=false;      //Note: clock and turn on automatically
+PImage  picbackgroun, orangeForeground, nitro50Portrait; 
+Boolean nightmode==false; //NOTe Clock will trun on automacally
 Boolean brightnessControl=false;      //Note: ARROWS
 int brightnessNumber=128;       //Range:1-255
 //
@@ -33,9 +33,13 @@ void setup() {
   String imagesPath = up + open + up + open + up + open;
   String landScapeImage = "Images used"; 
   picBackground = loadImage( landScapeImage + open + "cactus gr7.png");
+  orangeForeground = loadImage() 
+  nitro50Portrait = loadImage()
   //
   //DIVs
   //rect( backgroundimageX, backgroundimageY, backgroundImageWidth, backgroundImageHeight );
+  rect(); //orange image 
+  rect(); //nitro50 image
   //
 } //End setup 
 //
@@ -66,7 +70,7 @@ void draw() {
   }
  image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
  image( orangeForeground ); //orange image, purpose see circles in aspect ratio 
- image(); // acer nitro 50 in portrait , geomety is landscape, thus centered
+ image(nitro50Portrait); // nitro50 portrait,  geometry is landscape, thus 
 } //End draw
 //
 void keyPressed() {
