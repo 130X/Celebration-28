@@ -4,7 +4,7 @@ float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageH
 float orangeX, orangeY, orangeWidth, orangeHeight;
 float nitroX, nitroY, nitroWidth, nitroHeight;
 PImage  picbackgroun, orangeForeground, nitro50Portrait;
-Boolean nightmode==false; //NOTe Clock will trun on automacally
+Boolean nightmode==false; //NOTE Clock will trun on automacally
 Boolean brightnessControl=false;      //Note: ARROWS
 int brightnessNumber=128;       //Range:1-255
 //
@@ -31,7 +31,7 @@ void setup() {
   backgroundImageHeight = appHeight-1;
   orangeX = appWidth*1/14;
   orangeY = appHeight*1/8; 
-  orangeWidth = appWidth*1/7; //  2/14
+  orangeWidth = appWidth*2.5/7; //  2/14
   orangeHeight = appWidth*1/4; //  2/8 
   nitroX = orangeX;
   nitroY = appWidth*5/8; 
@@ -42,9 +42,13 @@ void setup() {
   String open = "/";
   String imagesPath = up + open + up + open + up + open;
   String landScapeImage = "Images used";
-  picBackground = loadImage( landScapeImage + open + "cactus gr7.png");
-  //orangeForeground = loadImage(); //bike image, purpose: see circles in aspect ratio
-  //nitro50Portrait = loadImage(); //nitro50Portrait
+  String portraitImage = "imagesUsed/Portrait/";
+  String cactus = "cactus gr7.png";
+  String orange = "bike.jpg";
+  String nitro = "10-s
+  picBackground = loadImage( landScapeImage + open + "cactus gr7.png"); concationation
+  orangeForeground = loadImage(landScapeImage + open + );
+  nitroPortrait = loadImage(landScapeImage + open + );
   //
   //DIVs
   //rect( backgroundimageX, backgroundimageY, backgroundImageWidth, backgroundImageHeight );
@@ -55,7 +59,7 @@ void setup() {
 //
 void draw() {
  //background(255); //built in BUG, 1 pixel
-  //rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
+  rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   //
   //println(brightnessControl, nightmode);
   if ( brightnessControl==true )
@@ -80,7 +84,7 @@ void draw() {
   }
   image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   image( orangeForeground ); //orange image, purpose see circles in aspect ratio
-  image(nitro50Portrait); // nitro50 portrait,  geometry is landscape, thus
+  image( nitro50Portrait); // nitro50 portrait,  geometry is landscape, thus
 } //End draw
 //
 void keyPressed() {
