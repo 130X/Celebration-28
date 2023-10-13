@@ -1,7 +1,9 @@
 //Global Variables
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
-PImage  picbackgroun, orangeForeground, nitro50Portrait; 
+float orangeX, orangeY, orangeWidth, orangeHeight;
+float nitroX, nitroY, nitroWidth, nitroHeight;
+PImage  picbackgroun, orangeForeground, nitro50Portrait;
 Boolean nightmode==false; //NOTe Clock will trun on automacally
 Boolean brightnessControl=false;      //Note: ARROWS
 int brightnessNumber=128;       //Range:1-255
@@ -31,19 +33,19 @@ void setup() {
   nitroX, nitroY, nitroWidth, nitroHeight;
   //Concatentation of Pathways
   String up = "..";
-  String open = "/"; 
+  String open = "/";
   String imagesPath = up + open + up + open + up + open;
-  String landScapeImage = "Images used"; 
+  String landScapeImage = "Images used";
   picBackground = loadImage( landScapeImage + open + "cactus gr7.png");
   //orangeForeground = loadImage(); //bike image, purpose: see circles in aspect ratio
-  //nitro50Portrait = loadImage(); //nitro50Portrait 
+  //nitro50Portrait = loadImage(); //nitro50Portrait
   //
   //DIVs
   //rect( backgroundimageX, backgroundimageY, backgroundImageWidth, backgroundImageHeight );
-  rect ( orangeX, orangeY, orangeWidth, orangeHeight ); //orange image 
-  rect( nitroX, nitroY, nitroWidth, nitroHeight); //nitro50 image
+  rect ( orangeX, orangeY, orangeWidth, orangeHeight ); //orange image
+  rect ( nitroX, nitroY, nitroWidth, nitroHeight); //nitro50 image
   //
-} //End setup 
+} //End setup
 //
 void draw() {
   //background(255); //built in BUG, 1 pixel
@@ -70,9 +72,9 @@ void draw() {
     noTint(); //See Processing DOC
     //println(nightmode);
   }
- image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
- image( orangeForeground ); //orange image, purpose see circles in aspect ratio 
- image(nitro50Portrait); // nitro50 portrait,  geometry is landscape, thus 
+  image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
+  image( orangeForeground ); //orange image, purpose see circles in aspect ratio
+  image(nitro50Portrait); // nitro50 portrait,  geometry is landscape, thus
 } //End draw
 //
 void keyPressed() {
@@ -87,7 +89,7 @@ void keyPressed() {
   //NOTE: Nightmode does turn off
   if ( key==CODED && keyCode==UP || keyCode==DOWN ) { //Brightness keybind
     brightnessControl = true;
-    //Bultin BUG, use boolean 
+    //Bultin BUG, use boolean
     if (key==CODED && keyCode==UP) brightnessNumber++ ; //brightnessNumber+=1  //brightnessNumber = brightnessNumber+1
     if (key==CODED && keyCode==DOWN) brightnessNumber-- ; //brightnessNumber-=1 //brightnessNumber = brightnessNumber-1
     //CONTINUE HERE with brightness toggles
