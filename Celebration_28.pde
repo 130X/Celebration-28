@@ -29,9 +29,15 @@ void setup() {
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
   backgroundImageHeight = appHeight-1;
-  orangeX, orangeY, orangeWidth, orangeHeight;
-  nitroX, nitroY, nitroWidth, nitroHeight;
-  //Concatentation of Pathways
+  orangeX = appWidth*1/14;
+  orangeY = appHeight*1/8; 
+  orangeWidth = appWidth*1/7; //  2/14
+  orangeHeight = appWidth*1/4; //  2/8 
+  nitroX = orangeX;
+  nitroY = appWidth*5/8; 
+  nitroWidth = orangeWidth;
+  nitroHeight = orangeHeight;
+  //Concatentation of Pathways + how to get image out of folder
   String up = "..";
   String open = "/";
   String imagesPath = up + open + up + open + up + open;
@@ -48,7 +54,7 @@ void setup() {
 } //End setup
 //
 void draw() {
-  //background(255); //built in BUG, 1 pixel
+ //background(255); //built in BUG, 1 pixel
   //rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   //
   //println(brightnessControl, nightmode);
