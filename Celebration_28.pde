@@ -27,19 +27,21 @@ void setup() {
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
   backgroundImageHeight = appHeight-1;
+  orangeX, orangeY, orangeWidth, orangeHeight;
+  nitroX, nitroY, nitroWidth, nitroHeight;
   //Concatentation of Pathways
   String up = "..";
   String open = "/"; 
   String imagesPath = up + open + up + open + up + open;
   String landScapeImage = "Images used"; 
   picBackground = loadImage( landScapeImage + open + "cactus gr7.png");
-  orangeForeground = loadImage() 
-  nitro50Portrait = loadImage()
+  //orangeForeground = loadImage(); //bike image, purpose: see circles in aspect ratio
+  //nitro50Portrait = loadImage(); //nitro50Portrait 
   //
   //DIVs
   //rect( backgroundimageX, backgroundimageY, backgroundImageWidth, backgroundImageHeight );
-  rect(); //orange image 
-  rect(); //nitro50 image
+  rect ( orangeX, orangeY, orangeWidth, orangeHeight ); //orange image 
+  rect( nitroX, nitroY, nitroWidth, nitroHeight); //nitro50 image
   //
 } //End setup 
 //
