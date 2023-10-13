@@ -83,8 +83,8 @@ void draw() {
     //println(nightmode);
   }
   image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
-  image( orangeForeground ); //orange image, purpose see circles in aspect ratio
-  image( nitro50Portrait); // nitro50 portrait,  geometry is landscape, thus
+  image( orangeForeground, orangeX, orangeY, orangeWidth, orangeHeight  ); //orange image, purpose see circles in aspect ratio
+  image( nitroPortrait, nitroX, nitroY, nitroWidth, nitroHeight ); // nitro50 portrait,  geometry is landscape, thus
 } //End draw
 //
 void keyPressed() {
