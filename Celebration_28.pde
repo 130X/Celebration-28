@@ -37,6 +37,17 @@ void setup() {
   nitroY = appWidth*5/8; 
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
+  //Aspect ratio calculations 
+  //Determine Aspect Raito 
+  //Compare dimensions to get larger dimension
+  //Calculate smaller Dimension
+  //Rewrite variables based on rect() vars
+  CactusImageWidth = ;
+  CactusImageheight = ; 
+  orangeImageWidth = ; 
+  orangeimageHeight = ; 
+  nitroImageWidth = ;
+  nitroImageHeight = ;
   //Concatentation of Pathways + how to get image out of folder
   String up = "..";
   String open = "/";
