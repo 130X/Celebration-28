@@ -4,7 +4,7 @@ float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageH
 float orangeX, orangeY, orangeWidth, orangeHeight;
 float nitroX, nitroY, nitroWidth, nitroHeight;
 PImage  picbackgroun, orangeForeground, nitro50Portrait;
-Boolean nightmode==false; //NOTE Clock will trun on automacally
+Boolean nightmode=false; 
 Boolean brightnessControl=false;      //Note: ARROWS
 int brightnessNumber=128;       //Range:1-255
 //
@@ -42,8 +42,8 @@ void setup() {
   //Compare dimensions to get larger dimension
   //Calculate smaller Dimension
   //Rewrite variables based on rect() vars
-  CactusImageWidth = ;
-  CactusImageheight = ; 
+  cactusImageWidth = ;
+  cactusImageHeight = ; 
   orangeImageWidth = ; 
   orangeimageHeight = ; 
   nitroImageWidth = ;
@@ -56,7 +56,7 @@ void setup() {
   String portraitImage = "imagesUsed/Portrait/";
   String cactus = "cactus gr7.png";
   String orange = "bike.jpg";
-  String nitro = "10-s
+  String nitro = "nitro.jpg"
   picBackground = loadImage( landScapeImage + open + "cactus gr7.png"); concationation
   orangeForeground = loadImage(landScapeImage + open + );
   nitroPortrait = loadImage(landScapeImage + open + );
