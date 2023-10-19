@@ -3,7 +3,7 @@ int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float orangeX, orangeY, orangeWidth, orangeHeight;
 float nitroX, nitroY, nitroWidth, nitroHeight;
-PImage  picbackgroun, orangeForeground, nitro50Portrait;
+PImage  picbackground, orangeForeground, nitroPortrait;
 Boolean nightmode=false; 
 Boolean brightnessControl=false;      //Note: ARROWS
 int brightnessNumber=128;       //Range:1-255
@@ -49,11 +49,11 @@ void setup() {
   String landScapeImage = "Images used";
   String portraitImage = "imagesUsed/Portrait/";
   String cactusImage = "cactus gr7.png";
-  String orange = "bike.jpg";
+  String orange = "orange.jpg";
   String nitro = "nitro.jpg";
-  picBackground = loadImage( landScapeImage + open + "cactus gr7.png"); 
-  orangeForeground = loadImage( landScapeImage + open + );
-  nitroPortrait = loadImage(landScapeImage + open + );
+  picbackground = loadImage( landScapeImage + open + "cactus gr7.png"); 
+  orangeForeground = loadImage( landScapeImage + open + "orange.jpg" );
+  nitroPortrait = loadImage(landScapeImage + open +  "nitro.jpg" );
   //
   //DIVs
   //rect( backgroundimageX, backgroundimageY, backgroundImageWidth, backgroundImageHeight );
