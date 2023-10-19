@@ -42,23 +42,17 @@ void setup() {
   //Compare dimensions to get larger dimension
   //Calculate smaller Dimension
   //Rewrite variables based on rect() vars
-  cactusImageWidth = ;
-  cactusImageHeight = ; 
-  orangeImageWidth = ; 
-  orangeimageHeight = ; 
-  nitroImageWidth = ;
-  nitroImageHeight = ;
   //Concatentation of Pathways + how to get image out of folder
   String up = "..";
   String open = "/";
   String imagesPath = up + open + up + open + up + open;
   String landScapeImage = "Images used";
   String portraitImage = "imagesUsed/Portrait/";
-  String cactus = "cactus gr7.png";
+  String cactusImage = "cactus gr7.png";
   String orange = "bike.jpg";
-  String nitro = "nitro.jpg"
-  picBackground = loadImage( landScapeImage + open + "cactus gr7.png"); concationation
-  orangeForeground = loadImage(landScapeImage + open + );
+  String nitro = "nitro.jpg";
+  picBackground = loadImage( landScapeImage + open + "cactus gr7.png"); 
+  orangeForeground = loadImage( landScapeImage + open + );
   nitroPortrait = loadImage(landScapeImage + open + );
   //
   //DIVs
