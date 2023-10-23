@@ -27,6 +27,10 @@ void setup() {
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
   //Aspect ratio Change
+  orangeWidth = 1524; //hardcode of image file
+  orangeHeight = 1024;
+  nitroWidth = 500; 
+  nitroHeight = 500; 
   //Original Aspect Raios of Images to Change 
   //Compare side Lengths to see which is bigger
   //"Compress" the biggest side into the rect()
