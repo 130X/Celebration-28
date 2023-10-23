@@ -27,7 +27,10 @@ void setup() {
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
   //Aspect ratio Change
-    
+  //Original Aspect Raios of Images to Change 
+  //Compare side Lengths to see which is bigger
+  //"Compress" the biggest side into the rect()
+  //Multiply the Image"s Aspect Raito to the smaller size
   //
   //Concatentation of Pathways + how to get image out of folder
   String up = "..";
