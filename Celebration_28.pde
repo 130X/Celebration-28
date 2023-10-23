@@ -26,15 +26,13 @@ void setup() {
   nitroY = appWidth*5/8; 
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
-  //Aspect ratio calculations 
-  //Determine Aspect Raito 
-  //Compare dimensions to get larger dimension
-  //Calculate smaller Dimension
-  //Rewrite variables based on rect() vars
+  //Aspect ratio Change
+    
+  //
   //Concatentation of Pathways + how to get image out of folder
   String up = "..";
   String open = "/";
-  String imagesPath = up + open + up + open + up + open;
+  String imagesPath = "../";
   String landScapeImage = "Images used";
   String portraitImage = "imagesUsed/Portrait/";
   String cactusImage = "cactus gr7.png";
