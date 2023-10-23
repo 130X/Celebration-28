@@ -31,6 +31,9 @@ void setup() {
   orangeHeight = 1024;
   nitroWidth = 500; 
   nitroHeight = 500; 
+  float aspectRatio = 0.0; //Local variable  
+  float rectDimensionMemory = 0.0; //Assinged ZERO b/c IF
+  if () {} else {} //End IF 
   //Original Aspect Raios of Images to Change 
   //Compare side Lengths to see which is bigger
   //"Compress" the biggest side into the rect()
