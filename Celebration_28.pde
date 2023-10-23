@@ -1,7 +1,7 @@
 //Global Variables
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
-float orangeX, orangeY, orangeWidth, orangeHeight;
+float orangeXrect, orangeYrect, orangeWidth, orangeHeight;
 float nitroX, nitroY, nitroWidth, nitroHeight;
 PImage  picbackground, orangeForeground, nitroPortrait;
 //
@@ -18,11 +18,11 @@ void setup() {
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
   backgroundImageHeight = appHeight-1;
-  orangeX = appWidth*1/14;
-  orangeY = appHeight*1/8; 
+  orangeXrect = appWidth*1/14;
+  orangeYrect = appHeight*1/8; 
   orangeWidth = appWidth*2.5/7; //  2/14
   orangeHeight = appWidth*1/4; //  2/8 
-  nitroX = orangeX;
+  nitroX = orangeXrect;
   nitroY = appWidth*5/8; 
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
@@ -67,7 +67,7 @@ void setup() {
   //
   //DIVs
   //rect( backgroundimageX, backgroundimageY, backgroundImageWidth, backgroundImageHeight );
-  rect ( orangeX, orangeY, orangeWidth, orangeHeight ); //orange image
+  rect ( orangeXrect, orangeYrect, orangeWidth, orangeHeight ); //orange image
   rect ( nitroX, nitroY, nitroWidth, nitroHeight); //nitro50 image
   //
 } //End setup
@@ -77,7 +77,7 @@ void draw() {
   rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   //
   image( picbackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
-  image( orangeForeground, orangeX, orangeY, orangeWidth, orangeHeight  ); //orange image, purpose see circles in aspect ratio
+  image( orangeForeground, orangeXrect, orangeYrect, orangeWidth, orangeHeight  ); //orange image, purpose see circles in aspect ratio
   image( nitroPortrait, nitroX, nitroY, nitroWidth, nitroHeight ); // nitro50 portrait,  geometry is landscape, thus
 } //End draw
 //
