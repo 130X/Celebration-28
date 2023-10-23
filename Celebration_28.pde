@@ -12,8 +12,8 @@ void setup() {
   appWidth = width;
   appHeight = height;
   //
-  //Population
-  //Variable population
+//Population
+//Variable population
   backgroundImageX = appWidth*0;
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
@@ -26,14 +26,27 @@ void setup() {
   nitroY = appWidth*5/8; 
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
-  //Aspect ratio Change
+//Aspect ratio Change
   orangeWidth = 1524; //hardcode of image file
   orangeHeight = 1024;
   nitroWidth = 500; 
   nitroHeight = 500; 
   float aspectRatio = 0.0; //Local variable  
   float rectDimensionMemory = 0.0; //Assinged ZERO b/c IF
-  if () {} else {} //End IF 
+  if ( orangeWidth > orangeHeight ) { //Bike Image if Landscape
+    //Comparison erification
+    println("orange is Portrait");
+  } else { //ORANGE Image if Portrait
+  //Comparison erification
+    println("orange is Portrait");
+  } //End IF 
+  if ( nitroWidth > nitroHeight ) { //NITRO Image if Landscape 
+  //Comparison erification
+    println("nitro is Portrait");
+  } else { //nitro Image if Portrait
+  //Comparison erification
+    println("nitro is Portrait");
+  } //End IF 
   //Original Aspect Raios of Images to Change 
   //Compare side Lengths to see which is bigger
   //"Compress" the biggest side into the rect()
