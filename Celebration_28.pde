@@ -26,11 +26,11 @@ void setup() {
   nitroY = appWidth*5/8; 
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
-//Aspect ratio Change
+//Aspect Ratio Change
   orangeWidth = 1524; //hardcode of image file
-  orangeHeight = 1024;
-  nitroWidth = 500; 
-  nitroHeight = 500; 
+  orangeHeight = 1024; //from image file
+  nitroWidth = 500; //from image file
+  nitroHeight = 500; //from image file
   float aspectRatio = 0.0; //Local variable  
   float rectDimensionMemory = 0.0; //Assinged ZERO b/c IF
   if ( orangeWidth > orangeHeight ) { //Bike Image if Landscape
