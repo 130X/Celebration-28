@@ -35,6 +35,10 @@ void setup() {
   float rectDimensionMemory = 0.0; //Assinged ZERO b/c IF
   if ( orangeWidth > orangeHeight ) { //Bike Image if Landscape
     //Comparison erification
+    aspectRatio = float(orangeHeight) / float(orangeWidth);// 
+    //memory of smaller side
+    orangeWidth = orange WidthRect;
+    orangeHeight = apect ratio * orangewidth
     println("orange is Portrait");
   } else { //ORANGE Image if Portrait
   //Comparison erification
