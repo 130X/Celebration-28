@@ -87,7 +87,7 @@ void draw() {
     noTint(); //See Processing DOC
     //println(nightmode);
   }
-  image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
+  image( picbackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   image( orangeForeground, orangeX, orangeY, orangeWidth, orangeHeight  ); //orange image, purpose see circles in aspect ratio
   image( nitroPortrait, nitroX, nitroY, nitroWidth, nitroHeight ); // nitro50 portrait,  geometry is landscape, thus
 } //End draw
