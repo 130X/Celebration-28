@@ -41,7 +41,7 @@ void setup() {
     orangeWidth = apectRatio * orangeHeight;
     if ( nitro ) {} //ERROR Catch is orangeHeight > bikeHeightRect
     println("orange is Portrait");
-  } else { //ORANGE Image if Portrait
+  } else { //ORANGE Image if Portrait 
   //Comparison erification
     println("orange is Portrait");
   } //End IF 
