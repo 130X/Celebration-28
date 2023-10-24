@@ -1,8 +1,8 @@
 //Global Variables
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
-float orangeXrect, orangeYrect, orangeWidth, orangeHeight;
-float nitroX, nitroY, nitroWidth, nitroHeight;
+float orangeXrect, orangeYrect, orangeWidth, orangeHeight, orangeHeight, orangeWidth;
+float nitroX, nitroY, nitroWidthRect, nitroHeightRect, nitroHeight, nitroWidth;
 PImage  picbackground, orangeForeground, nitroPortrait;
 //
 void setup() {
@@ -39,7 +39,7 @@ void setup() {
     //memory of smaller side
     orangeHeight = orangeHeightRect;
     orangeWidth = apectRatio * orangeHeight;
-    //if () {} //ERROR Catch is bikeHeight > bikeHeightRect
+    if ( nitro ) {} //ERROR Catch is orangeHeight > bikeHeightRect
     println("orange is Portrait");
   } else { //ORANGE Image if Portrait
   //Comparison erification
@@ -83,7 +83,7 @@ void draw() {
   rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   //
   image( picbackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
-  image( orangeForeground, orangeXrect, orangeYrect, orangeWidth, orangeHeight  ); //orange image, purpose see circles in aspect ratio
+  image( orangeForeground, orangeXrect, orangeYrect, orangeWidth, orangeHeight ); //orange image, purpose see circles in aspect ratio
   image( nitroPortrait, nitroX, nitroY, nitroWidth, nitroHeight ); // nitro50 portrait,  geometry is landscape, thus
 } //End draw
 //
