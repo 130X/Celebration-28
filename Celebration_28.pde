@@ -33,21 +33,23 @@ void setup() {
   nitroHeight = 500; //from image file
   float aspectRatio = 0.0; //Local variable  
   float rectDimensionMemory = 0.0; //Assinged ZERO b/c IF
-  if ( orangeWidth > orangeHeight ) { //Bike Image if Landscape
-    //Comparison erification
-    aspectRatio = float(orangeHeight) / float(orangeWidth);// 
+  if ( orangeWidth > orangeHeight ); { //Bike Image if Landscape
+  //Comparison Verification
+    aspectRatio = float(orangeWidth) / float(orangeHeight); // Smaller/Larger=0 if int, use 
     //memory of smaller side
-    orangeWidth = orange WidthRect;
-    orangeHeight = apect ratio * orangewidth
+    orangeHeight = orangeHeightRect;
+    orangeWidth = apectRatio * orangeHeight;
+    //if () {} //ERROR Catch is bikeHeight > bikeHeightRect
     println("orange is Portrait");
   } else { //ORANGE Image if Portrait
   //Comparison erification
     println("orange is Portrait");
   } //End IF 
-  if ( nitroWidth > nitroHeight ) { //NITRO Image if Landscape 
-  //Comparison erification
-    println("nitro is Portrait");
-  } else { //nitro Image if Portrait
+  if ( nitroWidth >= nitroHeight ) { //NITRO Image if Landscape 
+  //Comparison Verification
+    println("nitro is LandScape");
+    //Repeat Aspect Ratio
+  } else { //NITRO Image if Portrait
   //Comparison erification
     println("nitro is Portrait");
   } //End IF 
@@ -56,7 +58,7 @@ void setup() {
   //"Compress" the biggest side into the rect()
   //Multiply the Image"s Aspect Raito to the smaller size
   //
-  //Concatentation of Pathways + how to get image out of folder
+//Concatentation of Pathways + how to get image out of folder
   String up = "..";
   String open = "/";
   String imagesPath = "../";
@@ -69,7 +71,7 @@ void setup() {
   orangeForeground = loadImage( landScapeImage + open + "orange.jpg" );
   nitroPortrait = loadImage(landScapeImage + open +  "nitro.jpg" );
   //
-  //DIVs
+//DIVs
   //rect( backgroundimageX, backgroundimageY, backgroundImageWidth, backgroundImageHeight );
   rect ( orangeXrect, orangeYrect, orangeWidth, orangeHeight ); //orange image
   rect ( nitroX, nitroY, nitroWidth, nitroHeight); //nitro50 image
