@@ -69,11 +69,24 @@ if ( nitroWidth >= nitroHeight ) {
 String up ="..";
 String open = "/";
 String imagesPath = up + open
-String
-String
-String
-String
-String
+String landScapeImage + "";
+String portraitImage = "";
+String cactusImage = "";
+String orangeImage = "";
+String nitroImage = "";
+PBG = loadImage( ); 
+orangeForeground = ( );
+nitroPortrait = loadImage( );
+//
+} //End draw
+//
+void keyPressed() { 
+} //End keyPressed
+//
+void mousePressed() { 
+} //End mousepressed 
+//
+// EndMainProgram
 
 
 
