@@ -67,17 +67,17 @@ if ( nitroWidth >= nitroHeight ) {
 } //End IF
 //
 //Concatenation of Pathways
-String up ="..";
+String up = "..";
 String open = "/";
 String imagesPath = up + open;
-String landScapeImage + "imagesUsed/Landscape & Square Images/"; 
+String landScapeImage = "imagesUsed/Landscape & Square Images/"; 
 String portraitImage = "imagesUsed/Portrait/";
 String cactusImage = "cactus gr7.png";
 String orangeImage = "Orangejuice1.jpg";
 String nitroImage = "nitro.jpg";
-PBG = loadImage( );
-orangeForeground = ( );
-nitroPortrait = loadImage( );
+PBG = loadImage( imagesPath + landScapeImage + cactusImage );
+orangeForeground = loadImage( imagespath + landScapeImage + orangeImage);
+nitroPortrait = loadImage( imagesPath + portraitImage + nitroImage);
 //
 } //End draw
 //
