@@ -1,9 +1,10 @@
 //Global Variables
-int appWidth, appheight;
+int appWidth, appHeight;
 float BGIX, BGIY, BGIWidth, BGIHeight;
-float orangeXrect, orangeYrect, orangeWidthRect, orangeHeightRect;
+float orangeXrect, orangeYrect, orangeWidthRect, orangeHeightRect; 
 float nitroXrect, nitroYrect, nitroWidthRect, nitroHeightRect;
-PImage PBG, OrangeForeground, nitroPortrait;
+float orangeWidth, orangeHeight, nitroWidth, nitroHeight, aspectRatio, imagespath;
+PImage PBG, orangeForeground, nitroPortrait;
 //
 void setup() {
   //fullScreen();
@@ -13,7 +14,7 @@ void setup() {
   //
   //Population
   BGIX = appWidth*0;
-  BGIY = appheight*0;
+  BGIY = appHeight*0;
   BGIWidth = appWidth-1;
   BGIHeight = appHeight-1;
   orangeXrect = appWidth*1/14;
@@ -31,7 +32,7 @@ void setup() {
   nitroWidth = 352.0;
   nitroHeight = 485.0;
   float appectRatio = 0.0;
-  if ( orangeWidth >=orangeheight ) {
+  if ( orangeWidth >=orangeHeight ) {
     println("Orange is Landscape");
     aspectRatio = orangeHeight / orangeWidth;
     orangeWidth = orangeWidthRect;
@@ -43,9 +44,9 @@ void setup() {
   } else {
   println("orange is Portrait");
   aspectRatio = orangeWidth / orangeHeight;
-  bikeHeight = bikeheightRect;
-  bikeWidth = aspectRatio * bikeHeight;
-  if ( bikeWidth> bikeWidthRect ) {
+  orangeHeight = orangeHeightRect;
+  orangeWidth = aspectRatio * orangeHeight;
+  if ( orangeWidth> orangeWidthRect ) {
     println("ERROR: Aspect Calculation too big");
   }
 } //End IF
@@ -53,8 +54,8 @@ if ( nitroWidth >= nitroHeight ) {
   println( "NITRO is landscape");
     aspectRatio = nitroHeight / nitroWidth;
   nitroWidth = nitroWidthRect;
-  nitroHeight = aspectRaion * nitroWidth;
-  if ( nitroheight > nitroHeightRect ) {
+  nitroHeight = aspectRatio * nitroWidth;
+  if ( nitroHeight > nitroHeightRect ) {
     println("ERROR: Aspect Calculation Too Big");
   }
 } else {
@@ -88,9 +89,3 @@ void mousePressed() {
 } //End mousepressed
 //
 // End MainProgram
-
-
-
-
-
-}
