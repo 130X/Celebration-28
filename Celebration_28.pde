@@ -31,7 +31,7 @@ void setup() {
   orangeHeight = 529.0;
   nitroWidth = 352.0;
   nitroHeight = 485.0;
-  float appectRatio = 0.0;
+  float aspectRatio = 0.0;
   if ( orangeWidth >=orangeHeight ) {
     println("Orange is Landscape");
     aspectRatio = orangeHeight / orangeWidth;
