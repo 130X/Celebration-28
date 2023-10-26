@@ -7,34 +7,34 @@ PImage PBG, OrangeForeground, nitroPortrait;
 //
 void setup() {
   //fullScreen(); 
-  size( , );
+  size( 800, 600 );
   appWidth = width; 
   appHeight = height; 
   //
 //Population
   BGIX = appWidth*0;
   BGIY = appheight*0;
-  BGIWidth = appWidth;
-  BGIHeight = appHeight;
-  orangeXrect = appWidth;
-  orangeYrect = appHeight;
-  orangeWidthRect = appWidth;
-  orangeHeightRect = appHeight;
+  BGIWidth = appWidth-1;
+  BGIHeight = appHeight-1;
+  orangeXrect = appWidth*1/14;
+  orangeYrect = appHeight*1/8;
+  orangeWidthRect = appWidth*2.25/7;
+  orangeHeightRect = appHeight*1/4;
   nitroXrect = orangeXrect;
-  nitroYrect = appHeight;
+  nitroYrect = appHeight*5/8;
   nitroWidthRect = orangeWidthRect;
   nitroHeightRect = orangeHeightRect; 
   //
 //Aspect Ratio 
-  orangeWidth = ;
-  orangeHeight = ; 
-  nitroWidth = ; 
-  nitroHeight = ;
-float appectRatio = ; 
+  orangeWidth = 860.0;
+  orangeHeight = 529.0; 
+  nitroWidth = 352.0; 
+  nitroHeight = 485.0;
+float appectRatio = 0.0; 
 if ( orangeWidth >=orangeheight ) { 
   println("Orange is Landscape");
   aspectRatio = orangeHeight / orangeWidth; 
-  orangeWidth = orangeWidthRect
+  orangeWidth = orangeWidthRect;
   orangeHeight = aspectRatio * orangeWidth; 
   if ( orangeHeight > orangeHeightRect ) 
   println("ERROR: Aspect Calcualtion Too Big");
