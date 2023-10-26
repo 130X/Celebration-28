@@ -1,17 +1,17 @@
 //Global Variables
-int appWidth, appheight; 
-float BGIX, BGIY,BGIWidth, BGIHeight;
+int appWidth, appheight;
+float BGIX, BGIY, BGIWidth, BGIHeight;
 float orangeXrect, orangeYrect, orangeWidthRect, orangeHeightRect;
 float nitroXrect, nitroYrect, nitroWidthRect, nitroHeightRect;
 PImage PBG, OrangeForeground, nitroPortrait;
 //
 void setup() {
-  //fullScreen(); 
+  //fullScreen();
   size( 800, 600 );
-  appWidth = width; 
-  appHeight = height; 
+  appWidth = width;
+  appHeight = height;
   //
-//Population
+  //Population
   BGIX = appWidth*0;
   BGIY = appheight*0;
   BGIWidth = appWidth-1;
@@ -23,76 +23,74 @@ void setup() {
   nitroXrect = orangeXrect;
   nitroYrect = appHeight*5/8;
   nitroWidthRect = orangeWidthRect;
-  nitroHeightRect = orangeHeightRect; 
+  nitroHeightRect = orangeHeightRect;
   //
-//Aspect Ratio 
+  //Aspect Ratio
   orangeWidth = 860.0;
-  orangeHeight = 529.0; 
-  nitroWidth = 352.0; 
+  orangeHeight = 529.0;
+  nitroWidth = 352.0;
   nitroHeight = 485.0;
-float appectRatio = 0.0; 
-if ( orangeWidth >=orangeheight ) { 
-  println("Orange is Landscape");
-  aspectRatio = orangeHeight / orangeWidth; 
-  orangeWidth = orangeWidthRect;
-  orangeHeight = aspectRatio * orangeWidth; 
-  if ( orangeHeight > orangeHeightRect ) 
-  println("ERROR: Aspect Calcualtion Too Big");
-  }
-} else { 
+  float appectRatio = 0.0;
+  if ( orangeWidth >=orangeheight ) {
+    println("Orange is Landscape");
+    aspectRatio = orangeHeight / orangeWidth;
+    orangeWidth = orangeWidthRect;
+    orangeHeight = aspectRatio * orangeWidth;
+    if ( orangeHeight > orangeHeightRect )
+    {
+      println("ERROR: Aspect Calcualtion Too Big");
+    }
+  } else {
   println("orange is Portrait");
-  aspectRatio = orangeWidth / orangeHeight; 
-  bikeHeight = bikeheightRect; 
-  bikeWidth = aspectRatio * bikeHeight; 
+  aspectRatio = orangeWidth / orangeHeight;
+  bikeHeight = bikeheightRect;
+  bikeWidth = aspectRatio * bikeHeight;
   if ( bikeWidth> bikeWidthRect ) {
     println("ERROR: Aspect Calculation too big");
   }
 } //End IF
 if ( nitroWidth >= nitroHeight ) {
-  println( "NITRO is landscape")
-  aspectRatio = nitroHeight / nitroWidth; 
+  println( "NITRO is landscape");
+    aspectRatio = nitroHeight / nitroWidth;
   nitroWidth = nitroWidthRect;
-  nitroHeight = aspectRaion * nitroWidth; 
-  if ( nitroheight > nitroHeightRect ) { 
+  nitroHeight = aspectRaion * nitroWidth;
+  if ( nitroheight > nitroHeightRect ) {
     println("ERROR: Aspect Calculation Too Big");
   }
-} else { 
+} else {
   println("NITRO is Portrait");
-  aspectRatio = nitroWidth / nitroHeight; 
-  nitroHeight = nitroHeightRect; 
-  if ( nitroWidth > nitroWidthRect ) { 
-    println("ERROR: Aspect Calculation Too Big")
+  aspectRatio = nitroWidth / nitroHeight;
+  nitroHeight = nitroHeightRect;
+  if ( nitroWidth > nitroWidthRect ) {
+    println("ERROR: Aspect Calculation Too Big");
   }
 } //End IF
-  //
-//Concatenation of Pathways 
+//
+//Concatenation of Pathways
 String up ="..";
 String open = "/";
-String imagesPath = up + open
-String landScapeImage + "";
-String portraitImage = "";
-String cactusImage = "";
-String orangeImage = "";
-String nitroImage = "";
-PBG = loadImage( ); 
+String imagesPath = up + open;
+String landScapeImage + "imagesUsed/Landscape & Square Images/"; 
+String portraitImage = "imagesUsed/Portrait/";
+String cactusImage = "cactus gr7.png";
+String orangeImage = "Orangejuice1.jpg";
+String nitroImage = "nitro.jpg";
+PBG = loadImage( );
 orangeForeground = ( );
 nitroPortrait = loadImage( );
 //
 } //End draw
 //
-void keyPressed() { 
+void keyPressed() {
 } //End keyPressed
 //
-void mousePressed() { 
-} //End mousepressed 
+void mousePressed() {
+} //End mousepressed
 //
-// EndMainProgram
+// End MainProgram
 
 
 
 
 
-  
-  
- 
 }
