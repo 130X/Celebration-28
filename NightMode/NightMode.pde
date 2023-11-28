@@ -74,11 +74,11 @@ if ( nitroWidth >= nitroHeight ) {
   String landScapeImage = "Imagesused"; 
   String portraitImage = "imagesUsed/Portrait/";
   String cactus = "cactus.png";
-  String orangeImage = "Orangejuice1.jpg";
-  String nitroImage = "nitro.jpg";
-  PBG = loadImage( imagespath + "cactus.png" ); 
-  orangeForeground = loadImage( imagespath + landScapeImage + "orangeImage");
-  nitroPortrait = loadImage( imagesPath + portraitImage + "nitroImage");
+  String orangimage = "Orangejuice1.jpg";
+  String nitroimage = "nitro.jpg";
+  PBG = loadImage( imagespath + landScapeImage +  "cactus" ); 
+  orangeForeground = loadImage( imagespath + landScapeImage + "orangeimage");
+  nitroPortrait = loadImage( imagesPath + portraitImage + "nitroimage");
   //
 } //End draw
 //
