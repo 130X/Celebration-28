@@ -1,4 +1,4 @@
-//Global Variables
+//Global Variables //
 int appWidth, appHeight;
 float BGIX, BGIY, BGIWidth, BGIHeight;
 float orangeXrect, orangeYrect, orangeWidthRect, orangeHeightRect; 
