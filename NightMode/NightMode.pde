@@ -1,4 +1,4 @@
-//Global Variables //
+//Global Variables //Celebration 28
 int appWidth, appHeight;
 float BGIX, BGIY, BGIWidth, BGIHeight;
 float orangeXrect, orangeYrect, orangeWidthRect, orangeHeightRect; 
@@ -71,14 +71,14 @@ if ( nitroWidth >= nitroHeight ) {
   String up = "..";
   String open = "/";
   String imagesPath = up + open;
-  String landScapeImage = "imagesUsed"; 
+  String landScapeImage = "Imagesused"; 
   String portraitImage = "imagesUsed/Portrait/";
-  String cactusImage = "cactus gr7.png";
+  String cactus = "cactus.png";
   String orangeImage = "Orangejuice1.jpg";
   String nitroImage = "nitro.jpg";
-  PBG = loadImage( imagespath + "cactus gr7.png" ); 
-  orangeForeground = loadImage( imagespath + landScapeImage + orangeImage);
-  nitroPortrait = loadImage( imagesPath + portraitImage + nitroImage);
+  PBG = loadImage( imagespath + "cactus.png" ); 
+  orangeForeground = loadImage( imagespath + landScapeImage + "orangeImage");
+  nitroPortrait = loadImage( imagesPath + portraitImage + "nitroImage");
   //
 } //End draw
 //
