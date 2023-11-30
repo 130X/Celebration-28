@@ -55,7 +55,7 @@ void draw() {
   rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   //
   if ( brightnessControl==true ) 
-  {
+  { //
     if ( brightnessNumber<1 ) {
       brightnessNumber=1;
     } else if ( brightnessNumber>255 ) {
@@ -66,9 +66,10 @@ void draw() {
     }
     if ( nightmode==true ) {
       tint ( 64, 64, 40 );
-      println(nightmode);
-    } else if { 
+      //println(nightmode);
+    } else { 
       noTint();
+      //
     } 
   image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   image( bikeForeground, bikeX, bikeY, bikeWidth, bikeHeight ); 
@@ -83,7 +84,7 @@ void keyPressed() {
       nightmode = true;
     }
   }
-  if () { 
+  if ( key==CODED && keyCode==UP || keyCode==DOWN ) {
     brightnessControl = true;
     if ( key==CODED && keyCode==UP )  brightnessNumber++ ; 
     if ( key==CODED &&& keyCode==DOWN ) brightnessNumber--;
