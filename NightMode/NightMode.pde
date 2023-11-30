@@ -1,32 +1,55 @@
 //Global Variables //Celebration 28
 int appWidth, appHeight;
-float BGIX, BGIY, BGIWidth, BGIHeight;
-float orangeXrect, orangeYrect, orangeWidthRect, orangeHeightRect; 
-float nitroXrect, nitroYrect, nitroWidthRect, nitroHeightRect;
-float orangeWidth, orangeHeight, nitroWidth, nitroHeight, aspectRatio, imagespath;
+float backgroundimageX, backgroundimageY, backgroundimageWidth, backgroundimageHeight;
+float orangeX, orangeY, orangeWidth, orangeHeight; 
+float nitroX, nitroY, nitroWidth, nitroHeight;
+float imagespath;
 PImage PBG, orangeForeground, nitroPortrait;
+Boolean nightmode=false;
+Boolean brightnessControl=false;
+int brightnessNumber=128; 
 //
 void setup() {
   //fullScreen();
-  size( 800, 600 );
+  size( 900, 700 );
   appWidth = width;
   appHeight = height;
-  //
 //Population
-  BGIX = appWidth*0;
-  BGIY = appHeight*0;
-  BGIWidth = appWidth-1;
-  BGIHeight = appHeight-1;
-  orangeXrect = appWidth*1/14;
-  orangeYrect = appHeight*1/8;
-  orangeWidthRect = appWidth*2.25/7;
-  orangeHeightRect = appHeight*1/4;
-  nitroXrect = orangeXrect;
-  nitroYrect = appHeight*5/8;
-  nitroWidthRect = orangeWidthRect;
-  nitroHeightRect = orangeHeightRect;
+  int hourNightMode = hour();
+  if ( hourNightMode>17) {
+    nightmode=true;  
+  } else if ( hourNightMode<05 ) { 
+    nightmode=true;
+  } else { 
+    nightmode=false;
+  } 
+  backgroundimageX = appWidth*0;
+  backgroundimageY = appHeight*0;
+  backgroundimageWidth = appWidth-1;
+  backgroundimageHeight = appHeight-1;
+  orangeX = appWidth*1/14;
+  orangeY= appHeight*1/8;
+  orangeWidth = appWidth*2.25/7;
+  orangeHeight = appHeight*1/4;
+  nitroX = orangeX;
+  nitroY = appHeight*5/8;
+  nitroWidth = orangeWidth;
+  nitroHeight = orangeHeight;
+  //Pathways 
+  String up = "../../../"; 
+  String open = "/";
+  String imagesPath = up + open; 
+  String landScapeImage = "imagesUsed/LandScape & Square Images/";
+  String portraitImage =  "imagesUsed/Portrait/";
+  String cactusImage = "cactus.png"; 
+  String orangeImage = "orangejuice1.jpg";
+  String nitroImage = "nitro.jpg";
+  PBG = loadImage( imagesPath + landScapeImage + cactusImage );
+  orangeForeground= loadImage(imagesPath + landScapeImage + orangeImage);
+  nitroPortrait
   //
-//Aspect Ratio
+//Aspect Ratio 
+/*
   orangeWidth = 860.0;
   orangeHeight = 529.0;
   nitroWidth = 352.0;
@@ -35,27 +58,27 @@ void setup() {
   if ( orangeWidth >=orangeHeight ) {
     println("Orange is Landscape");
     aspectRatio = orangeHeight / orangeWidth;
-    orangeWidth = orangeWidthRect;
+    orangeWidth = orangeWidth;
     orangeHeight = aspectRatio * orangeWidth;
-    if ( orangeHeight > orangeHeightRect )
+    if ( orangeHeight > orangeHeight )
     {
       println("ERROR: Aspect Calcualtion Too Big");
     }
   } else {
   println("orange is Portrait");
   aspectRatio = orangeWidth / orangeHeight;
-  orangeHeight = orangeHeightRect;
+  orangeHeight = orangeHeight;
   orangeWidth = aspectRatio * orangeHeight;
-  if ( orangeWidth> orangeWidthRect ) {
+  if ( orangeWidth> orangeWidth ) {
     println("ERROR: Aspect Calculation too big");
   }
 } //End IF
-if ( nitroWidth >= nitroHeight ) {
+  if ( nitroWidth >= nitroHeight ) {
   println( "NITRO is landscape");
     aspectRatio = nitroHeight / nitroWidth;
-  nitroWidth = nitroWidthRect;
+  nitroWidth = nitroWidth;
   nitroHeight = aspectRatio * nitroWidth;
-  if ( nitroHeight > nitroHeightRect ) {
+  if ( nitroHeight > nitroHeight ) {
     println("ERROR: Aspect Calculation Too Big");
   }
 } else {
@@ -66,6 +89,7 @@ if ( nitroWidth >= nitroHeight ) {
     println("ERROR: Aspect Calculation Too Big");
   }
 } //End IF
+*/
 //
   //Concatenation of Pathways
   String up = "..";
