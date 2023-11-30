@@ -71,9 +71,9 @@ void draw() {
       noTint();
       //
     } 
-  image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
-  image( bikeForeground, bikeX, bikeY, bikeWidth, bikeHeight ); 
-  image( darthVaderPortrait, darthX, darthY, darthWidth, darthHeight ); 
+  image( PBG, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
+  image( orangeForeground, orangeX, orangeY, orangeWidth, orangeHeight ); 
+  image( nitroPortrait, nitroX, nitroY, nitroWidth, nitroHeight); 
 } //End draw
 //
 void keyPressed() {
@@ -87,10 +87,11 @@ void keyPressed() {
   if ( key==CODED && keyCode==UP || keyCode==DOWN ) {
     brightnessControl = true;
     if ( key==CODED && keyCode==UP )  brightnessNumber++ ; 
-    if ( key==CODED &&& keyCode==DOWN ) brightnessNumber--;
+    if ( key==CODED && keyCode==DOWN ) brightnessNumber-- ;
   }
-  println(birghtnessNumber);
-} //End keyPressed
+  //
+  println(brightnessNumber);
+} //End keyPressed  
 //
 void mousePressed() {
 } //End mousepressed
