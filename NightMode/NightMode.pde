@@ -36,7 +36,7 @@ void setup() {
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
   //Pathways 
-  String up = ".."; 
+  String up = "../../../"; 
   String open = "/";
   String imagesPath = up + open; 
   String landScapeImage = "imagesUsed/LandScape & Square Images/";
