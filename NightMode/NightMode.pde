@@ -77,8 +77,18 @@ void draw() {
 //
 void keyPressed() {
   if ( key=='n'|| key=='N' ) {
-    if ( ngithmode
-  //
+    if ( nightmode==true ) { 
+      nightmode = false;
+    } else { 
+      nightmode = true;
+    }
+  }
+  if () { 
+    brightnessControl = true;
+    if ( key==CODED && keyCode==UP )  brightnessNumber++ ; 
+    if ( key==CODED &&& keyCode==DOWN ) brightnessNumber--;
+  }
+  println(birghtnessNumber);
 } //End keyPressed
 //
 void mousePressed() {
