@@ -56,7 +56,7 @@ void setup() {
 void draw() { 
   //
   rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
- //
+  //
     if ( brightnessControl==true ) 
     { 
     if ( brightnessNumber<1 ) {
