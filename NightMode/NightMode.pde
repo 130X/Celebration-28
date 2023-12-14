@@ -1,4 +1,6 @@
-//Global Variables //Celebration 28
+//NightMode and images
+//Global Variables
+//Celebration 28
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float orangeX, orangeY, orangeWidth, orangeHeight; 
