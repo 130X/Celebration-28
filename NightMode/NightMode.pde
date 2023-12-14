@@ -39,13 +39,13 @@ void setup() {
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
   //Pathways 
-  String up = "../../../"; 
+  String up = ".."; 
   String open = "/";
   String imagesPath = up + open; 
   String landScapeImage = "imagesUsed/LandScape & Square Images/";
   String portraitImage =  "imagesUsed/Portrait/";
   String cactusImage = "cactus.png"; 
-  String orangeImage = "orangejuice1.jpg";
+  String orangeImage = "Orangejuice1.jpg";
   String nitroImage = "nitro.jpg";
   picBackground = loadImage( imagesPath + landScapeImage + cactusImage );
   orangeForeground = loadImage( imagesPath + landScapeImage + orangeImage);
@@ -94,7 +94,7 @@ void keyPressed() {
     if ( key==CODED && keyCode==DOWN ) brightnessNumber-- ;
   }
   //
-  println(brightnessNumber); */
+  //println(brightnessNumber); 
 } //End keyPressed  
 //
 void mousePressed() {
