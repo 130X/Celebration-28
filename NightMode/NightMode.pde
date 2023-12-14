@@ -13,9 +13,10 @@ int brightnessNumber=128;
 //
 void setup() {
   //fullScreen();
-  size( 900, 700 );
+  size( 800, 600 );
   appWidth = width;
   appHeight = height;
+  //
 //Population
   int hourNightMode = hour();
   if ( hourNightMode>17) {
@@ -38,7 +39,7 @@ void setup() {
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
   //Pathways 
-  String up = "../../../"; 
+  String up = "../../"; 
   String open = "/";
   String imagesPath = up + open; 
   String landScapeImage = "imagesUsed/LandScape & Square Images/";
@@ -98,4 +99,4 @@ void keyPressed() {
 void mousePressed() {
 } //End mousepressed
 //
-// End MainProgram
+// End Main Program
