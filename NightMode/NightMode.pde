@@ -1,6 +1,5 @@
 //NightMode and images 
 //
-//
 //Global Variables
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
@@ -57,9 +56,9 @@ void setup() {
 void draw() { 
   //
   rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
-  //
-  if ( brightnessControl==true ) 
-  { //
+ //
+    if ( brightnessControl==true ) 
+    { 
     if ( brightnessNumber<1 ) {
       brightnessNumber=1;
     } else if ( brightnessNumber>255 ) {
@@ -73,15 +72,16 @@ void draw() {
       //println(nightmode);
     } else { 
       noTint();
-      //
+      // 
     } 
   image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   image( orangeForeground, orangeX, orangeY, orangeWidth, orangeHeight ); 
   image( nitroPortrait, nitroX, nitroY, nitroWidth, nitroHeight); 
+ 
 } //End draw
 //
 void keyPressed() {
-  if ( key=='n'|| key=='N' ) {
+  if ( key=='n'|| key=='N' ) { 
     if ( nightmode==true ) { 
       nightmode = false;
     } else { 
@@ -94,7 +94,7 @@ void keyPressed() {
     if ( key==CODED && keyCode==DOWN ) brightnessNumber-- ;
   }
   //
-  println(brightnessNumber);
+  println(brightnessNumber); */
 } //End keyPressed  
 //
 void mousePressed() {
