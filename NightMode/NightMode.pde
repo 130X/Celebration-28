@@ -1,12 +1,12 @@
-//NightMode and images
+//NightMode and images 
+//
+//
 //Global Variables
-//Celebration 28
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float orangeX, orangeY, orangeWidth, orangeHeight; 
 float nitroX, nitroY, nitroWidth, nitroHeight;
-float imagespath;
-PImage PBG, orangeForeground, nitroPortrait;
+PImage picBackground, orangeForeground, nitroPortrait;
 Boolean nightmode=false;
 Boolean brightnessControl=false;
 int brightnessNumber=128; 
@@ -19,6 +19,7 @@ void setup() {
   //
 //Population
   int hourNightMode = hour();
+  println(hourNightMode);
   if ( hourNightMode>17) {
     nightmode=true;  
   } else if ( hourNightMode<05 ) { 
@@ -39,7 +40,7 @@ void setup() {
   nitroWidth = orangeWidth;
   nitroHeight = orangeHeight;
   //Pathways 
-  String up = "../../"; 
+  String up = "../../../"; 
   String open = "/";
   String imagesPath = up + open; 
   String landScapeImage = "imagesUsed/LandScape & Square Images/";
@@ -47,7 +48,7 @@ void setup() {
   String cactusImage = "cactus.png"; 
   String orangeImage = "orangejuice1.jpg";
   String nitroImage = "nitro.jpg";
-  PBG = loadImage( imagesPath + landScapeImage + cactusImage );
+  picBackground = loadImage( imagesPath + landScapeImage + cactusImage );
   orangeForeground = loadImage( imagesPath + landScapeImage + orangeImage);
   nitroPortrait = loadImage( imagesPath + portraitImage + nitroImage);
   //
@@ -74,7 +75,7 @@ void draw() {
       noTint();
       //
     } 
-  image( PBG, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
+  image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   image( orangeForeground, orangeX, orangeY, orangeWidth, orangeHeight ); 
   image( nitroPortrait, nitroX, nitroY, nitroWidth, nitroHeight); 
 } //End draw
