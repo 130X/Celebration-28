@@ -11,9 +11,10 @@ int brightnessNumber=128;
 //
 void setup() {
   //fullScreen();
-  size( 900, 700 );
+  size( 800, 600 );
   appWidth = width;
   appHeight = height;
+  //
 //Population
   int hourNightMode = hour();
   if ( hourNightMode>17) {
